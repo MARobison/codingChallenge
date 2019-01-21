@@ -1,0 +1,32 @@
+This is Monica Robison's submssion for Paylocity's Coding Challenge.
+
+
+SUMMARY
+This table displays employee information such as first name, last name, salary, cost of their benefits with or without dependents,
+  and how much their yearly salary will be after benefit deductions.
+
+SETUP
+This is single page implementation using a session key with the idea that the person on this page is a paylocity employer.
+To use this application first run the sql file paylocityInterviewDB.sql this will create the database along with the necessary tables for the DAO.php to query from.
+Once the database has been set up you can run employerView.php file. I used a local WAMP server to host the files I have submitted.
+
+I would like to note that I also do not own the paylocityImage.png or favIcon.png you will find in the files.
+
+USING THE TOOL
+The table will be initially empty. If the webpage loads properly you should be able to see the instructions I left on the screen =).
+
+If the user does not have any dependents to enter you can put '0' in the number of dependents text box and click submit.
+
+To create a new employee click on the 'Create New Employee' button and type in the employee's company ID, first name, last name,
+and any dependents they might have. If an employee does have more than one dependent enter the name of a dependent who's name starts with an 'A'
+otherwise you can put any dependent's name in the boxes along with their age.
+
+BUGS
+If a user has more than one dependent they can't enter all the dependents, however if the employee has a dependent who's first name starts with an 'A' they
+can enter that dependent into the text box and the discount will work. If the employee has no dependents who's names start with an 'A' then they can simply enter
+any dependents name into the box or no name at all if they want to skip the entering names part.
+
+If a user enters an employeeId that already exists in the database (say maybe the dependents changed) the data will be removed twice rather than overwritten. Meaning
+that employee would need to be removed from the database and then reentered.
+
+The more I write this README the more I want to go back and implement things however I would gladly discuss my ideas or planned implementation during my interview.
